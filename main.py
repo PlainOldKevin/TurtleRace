@@ -42,8 +42,21 @@ if user_bet:
 while race_start:
     # Loop thru list and move each turtle a random amount
     for turtle in all_turtles:
+
+        # Check if race is over
+        if turtle.xcor() > 230:
+            race_start = False
+            # Check user input against winner
+            if user_bet == turtle.pencolor():
+                print("The " + turtle.pencolor() + " turtle has won the race. You win!")
+            else:
+                print("The " + turtle.pencolor() + " turtle has won the race. You lose.")
+
+        # Otherwise, move the turtles
         move = r.randint(0, 10)
         turtle.forward(move)
+
+
 
 # Exit on click
 screen.exitonclick()
