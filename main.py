@@ -13,8 +13,7 @@ screen.textinput(title="Make your bet!", prompt="Turtles are colors of the rainb
 # Create turtles and tell them to 'goto' their spots ;)
 def create():
     # First turtle
-    t1 = Turtle()
-    t1.shape("turtle")
+    t1 = Turtle("turtle")
     t1.color("red")
     t1.penup()
     t1.goto(x=-230,y=-90)
