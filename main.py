@@ -14,7 +14,7 @@ screen.textinput(title="Make your bet!", prompt="Turtles are colors of the rainb
 # Turtle colors
 turtle_colors =["red", "orange", "yellow", "green", "blue", "purple"]
 # Starting y position for relation to each other
-starty = -90
+starty = -75
 # For loop to make 'em
 for i in range(6):
     t = Turtle("turtle")
